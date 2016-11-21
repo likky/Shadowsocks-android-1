@@ -29,8 +29,8 @@ public class HttpConnectTunnel extends Tunnel {
         buffer.clear();
         buffer.put(request.getBytes());
         buffer.flip();
-        if (this.write(buffer, true)) {//发送连接请求到代理服务器
-            this.beginReceive();//开始接收代理服务器响应数据
+        if (this.write(buffer, true)) { //发送连接请求到代理服务器
+            this.beginReceive(); //开始接收代理服务器响应数据
         }
     }
 
